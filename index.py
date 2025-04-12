@@ -52,35 +52,35 @@ num2=10
 change=str(num2)
 print(type(change))
 
-# array=["hellow","my","name","is",name,24]
 
-str2="python is a langauge of backend"
+
+str2="python is a langauge of langauge backend"
 print(str2.upper())
 print(str2.lower())
 print(len(str2))   # this is for length
 print(str2[0:2])   # this is for slice
 print(Fname+" "+Lname) # this is for concat
+print(str2.startswith("python"))
+print(str2.endswith("backend"))
+print(str2.capitalize())
+print(str2.replace("backend","frontent"))
+print(str2.find("langauge"))
+print(str2.removeprefix("py")) # ye shuru se check karta he
+print(str2.removesuffix("end")) # ye end se check karta he
+count=str2.count("a") # this is for count
+print(count)
+print(str2.split(" ")) # isse string ko List bana sakte he
+
+
+
+
+
 
 
 var6="""Twinkle, twinkle, little star,
 How I wonder what you are!
 Up above the world so high,
 Like a diamond in the sky.
-
-When the blazing sun is gone,
-When he nothing shines upon,
-Then you show your little light,
-Twinkle, twinkle, all the night.
-
-Then the trav'ller in the dark,
-Thanks you for your tiny spark,
-He could not see which way to go,
-If you did not twinkle so.
-
-In the dark blue sky you keep,
-And often thro' my curtains peep,
-For you never shut your eye,
-Till the sun is in the sky.
 
 'Tis your bright and tiny spark,
 Lights the trav'ller in the dark:
@@ -92,24 +92,131 @@ print(var6)
 
 
 
+# string aur tuple immutible hote jo change nahi hote to agar change karna he to return karna hoga 
+# aur List yani array ye mutable hote he jo ke change ho jate he
+# aur dict mutable hota he jo ki change ho jata he
 
 
 
 
+string=f"hellow my name is {name}"  # isse variable ko string me daal sakte he
+print(string)
+
+
+
+# escaped character in python 
+# \n \t \r \"
+
+lis=[23,34,1,45,6,34,54]
+
+# List methods
+# lis.sort()    ye sequentially arrange kar deta he   
+# lis.reverse() ye pure list ko reverse kar deta he
+# lis.append()  ye push ki tarah hota he
+# lis.insert(3,12) ye slice ki tarah hota he bas ye delete nahi karta add karta he
+# lis.pop(2) ye pop kar leta he jo bhi index daalte he usko
+# lis.remove() ye remove kar deta he jo bhi value isme likhte he usko
 
 
 
 
+a=(1,2,3,4)  # ese bhi tuple bana sakte he
+b=()  # ese empty tuple bana sakte he
+c=(1,) # 1 value ke liye tuple ese banate he
+print(type(c))
+
+
+# tuples methods
+
+print(a.count(2)) # ye count batata he
+print(a.index(4)) # ye index batata he
+print(a[1:3])
+
+
+
+tupl=("muneeb","ur","rehman")
+ab,ac,ad = tupl
+print(ab)
+
+
+
+# dict
+
+marks={
+"muneeb":90,
+"rehman":40,
+"saad":34,
+0:"muneeb"    
+}
+
+
+print(marks)
+
+
+# methods in dict
+
+
+print(marks.items())  # isse key value pair alag hojate he tuple ke form me  
+print(marks.keys())   # isse dict ki keys show hoti he
+print(marks.values()) # isse dict ki values show hoti he
+print(marks.get("muneeb")) # isse dict ki key ki value ko get kar sakte he agar vo he to nahi to vo none return karega
+marks.update({"muneeb":95,"yayah":80})  # isse dict ko update kar sakte he jese kisi key ko update karna he ya nayi key add karni he 
+print(marks)
+marks_copy=marks.copy() # ye shallow copy bana deta he
+print(marks_copy)
+marks.clear() # ye pura dict ko clear kar deta he
+print(marks)
+
+
+marks2={
+"muneeb":90,
+"rehman":40,
+"saad":34,
+0:"muneeb"      
+}
+
+marks3=marks2.pop("muneebs","hoooo") # ye kya karta he ki ye original dict me se us key ko hata deta he aur return kar deta he agar key nahi he to default value bhi deni padti he
+print(marks3)
+
+
+marks4=marks2.popitem() # ye last wale key ko pop karke return kar deta he tuple ke form me
+print(marks4)
 
 
 
 
+# some sets informations
+
+# sets kabhi repeat nahi hote
+# sets unordered hote he aur unindex hote he
 
 
 
+# sets methods
+
+sett={1,23,34,45,56}
+
+sett.add(4)
+sett2=sett.copy()
+sett2.clear()
+print(sett2)
 
 
+newset=set() # is method se empty set bana sakte he
 
 
+sett3={"muneeb","ur","rehman",24}
+sett3.remove(24) # ye remove kar deta he agar he to nahi to error show hota he
+print(sett3)
+
+
+# sett3.union() # ye combine kar deta he dono sets ko  
+# sett3.intersection() # ye jo similar he usko return karta he
+# sett3.issubset()  # subset vo hota he jese ham kisi set ko compare kar rahe he agar set me he to vo subset hoga
+# sett3.issuperset() # superset vo hota he agar kisi set ka subset he to vo uska superset hoga
+
+
+print(sett3.union(sett))
+print(sett3.intersection(sett))
 
 
