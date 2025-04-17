@@ -36,18 +36,24 @@ contents = os.listdir(directory_path)
 print(contents)
 
 
+# RAM (random access memory)
+
+
+# volatile memory
+# volatile memory vo hoti he jo chal ke khatam ho jati he jese RAM 
+
+
+# non volatile memory
+# non volatile memory vo hoti he jo persist yani save karle ti he jese hard disc sd card etc
 
 
 
+# from random import randint
+# is tarike se particularly ek cheez ko import kar sakte he
 
 
 
-
-
-
-
-
-
+os.remove("old.txt")  # is module se kisi bhi file ko delete kar sakte he
 
 
 

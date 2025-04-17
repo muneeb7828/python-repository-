@@ -68,15 +68,16 @@ for i in range(0,100):
         
 
 
+del dic # isse pura dict delete ho jata he
 
 
+lis=["name","gmail","contact","address"]
+lis2=["muneeb","muneeb@gmail.com",82695277774,"idgah hills bhopal"]
 
-
-
-
-
-
-
+lis3=zip(lis,lis2)  # ye zip method hota he ye obj return karta he jo ke readable nahi hota to isko convert karna padta dict ya list me
+print(dict(lis3))   # ye dict me convert karta he
+print(list(lis3))   # ye list me convert karta he
+ 
 
 
 
