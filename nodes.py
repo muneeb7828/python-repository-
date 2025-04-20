@@ -22,7 +22,7 @@ jokes=pyjokes.get_joke()
 # engine.runAndWait()
 
 
-# ye c folder ki files ko dekh sakte he
+# isse c folder ki files ko dekh sakte he
 
 
 import os

@@ -47,6 +47,7 @@ print(type(variale))  # class 'tuple'
 
 
 # type casting
+# matlab uska type badalna
 
 num2=10
 change=str(num2)
@@ -122,15 +123,14 @@ lis=[23,34,1,45,6,34,54]
 
 a=(1,2,3,4)  # ese bhi tuple bana sakte he
 b=()  # ese empty tuple bana sakte he
-c=(1,) # 1 value ke liye tuple ese banate he
-print(type(c))
+print(type(b))
 
 
 # tuples methods
 
 print(a.count(2)) # ye count batata he
 print(a.index(4)) # ye index batata he
-print(a[1:3])
+print(a[1:3])     # ye slice ke liye hota he
 
 
 
@@ -221,6 +221,41 @@ print(sett3.intersection(sett))
 
 
 print("muneeb",end="")  # print ke andar ye likhne se line break nahi hoti 
+
+
+
+# sort in simple
+# ye sequentially arrange kar deta he list ko yani small to bigger
+# lis.sort(reverse=True) ese kare to reverse format me deta he
+
+
+# sort in advance
+# ye key= property ke saath ek function leta he aur iska use karke ham value ko sahi tarike se arrange kar sakte he
+
+fruits=["apple","orange","banana","lichi","mangoass"]
+
+fruits.sort(key=lambda v:len(v))
+print(fruits)
+
+
+# sorted()
+# ye bhi sort method ki tarah hota he bas ye 2 argument leta he phela itrator ke liye aur dusra function ke liye 
+# aur ye return karta he
+
+fruits2=["apple","orange","banana","lichi","mango"]
+
+list1=sorted(fruits2,key=lambda v:len(v))
+print(list1)
+
+
+
+
+
+
+
+
+
+
 
 
 

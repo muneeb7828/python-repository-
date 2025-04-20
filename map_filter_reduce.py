@@ -2,6 +2,13 @@
 # enumerate()
 # ye index bhi deta he jab loop chalate he tuple ke form me aur bagair loop ke ye object return karta he zip() ki tarah
 
+list1=[112,223,323,43,523,62,73,83,93]
+
+for i,value in enumerate(list1):
+    print(i,value)
+
+
+
 
 # lambda
 # ye aero function ki tarah hota he
@@ -19,9 +26,9 @@ variable1("muneeb")
 # aur iske callback function 1 hi parameter leta he value ka
 
 
-list1=[1,2,3,4,5,6,7,8,9]
+list2=[1,2,3,4,5,6,7,8,9]
 
-square=map(lambda v:v*v,list1)
+square=map(lambda v:v*v,list2)
 print(list(square))
 
 # filter()
@@ -29,9 +36,9 @@ print(list(square))
 # aur iske callback function 1 hi parameter leta he value ka
 
 
-list2=[12,22,33,44,55,67,78,89,90]
+list3=[12,22,33,44,55,67,78,89,90]
 
-even=filter(lambda v:v%2==0,list2)
+even=filter(lambda v:v%2==0,list3)
 print(list(even))
 
 
@@ -45,6 +52,23 @@ from functools import reduce
 list3=[12,3,4,5,6,7,8]
 sum=reduce(lambda i,v:i+v,list3)
 print(sum)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
