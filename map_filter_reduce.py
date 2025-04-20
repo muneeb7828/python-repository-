@@ -7,8 +7,19 @@ list1=[112,223,323,43,523,62,73,83,93]
 for i,value in enumerate(list1):
     print(i,value)
 
+# comprehensions
+# ye code aur asaan bana deta he
+# ye list aur dict ke liye hota he 
 
+# list comprehension
 
+num=[i for i in range(1,51) if(i%5==0)]
+print(num)
+
+# dict comprehension
+
+dic={i:i*i for i in range(1,10)}
+print(dic)
 
 # lambda
 # ye aero function ki tarah hota he
@@ -54,16 +65,49 @@ sum=reduce(lambda i,v:i+v,list3)
 print(sum)
 
 
+# try and except and else
+# ye error ko hatane ke liye hota he
+
+num1=int(input("enter number"))
+num2=int(input("enter number"))
+
+try:
+    num3=num1/num2
+    print(num3)
+except Exception as e:
+    print("you cannot write 0 in division")
+
+except ValueError as v:   # ye tab chalega jab value error hoga
+    print(v)
+
+except ZeroDivisionError as z:  # ye tab chalega jab ZeroDivisionError hoga
+    print(z)    
+
+else:                            # ye is liye hota he try wala chale tabhi ye chale 
+    print("you entered correct")
 
 
 
+# raise ZeroDivisionError("you entered wrong")
+# ye error lane ke liye hota he
 
 
 
+# match case
+# ye swich case ki tarah hota he
 
+def http_status(status):
+    match status:
+        case 200:
+            return "Ok"
+        case 404:
+            return "Not Found"        
+        case 500:
+            return "Internet Server Error"
+        case _:
+            return "unknown status"
 
-
-
+print(http_status(100))
 
 
 

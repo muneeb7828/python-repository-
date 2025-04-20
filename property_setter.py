@@ -8,7 +8,7 @@
 # p1*p2 = p1._mul_(p2) 
 # p1+p2 = p1._truediv_(p2) 
 
-# __str__ isse ham pata laga sakte he ki obj agar string ho to kesa dikhe
+# __str__ ye tab chalta he jab instance object return karta he
 
 # __init__,__add__, jo bhi ese likha hota he use dunder method bolte he
 # @property aur jo bhi ese likha hota he use decorator bolte he
@@ -80,6 +80,7 @@ class calculator:
     
     def __len__(self):         # ye tab call hota he jab instance ki length check karte he
         return len(f"{self.n}")
+ 
 
 
 

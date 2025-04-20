@@ -47,7 +47,7 @@ print(type(variale))  # class 'tuple'
 
 
 # type casting
-# matlab uska type badalna
+# matlab uska type change karna
 
 num2=10
 change=str(num2)

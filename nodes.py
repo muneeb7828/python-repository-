@@ -53,13 +53,11 @@ print(contents)
 
 
 
-os.remove("old.txt")  # is module se kisi bhi file ko delete kar sakte he
+# os.remove("old.txt")  # is module se kisi bhi file ko delete kar sakte he
 
 
-
-
-
-
+# from map_filter_reduce import sum 
+# is tarike se file ke element ko import kar sakte he
 
 
 
