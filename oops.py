@@ -1,15 +1,23 @@
 
 # incapculation
-# incapculation hota he vo class ke andar jitne bhi method ka ya proterty hoti he un sab ko batata he
+# incapculation matlab jo sirf class me hi accesible ho 
 
 # abstraction
-# abstraction hota he vo class me jo chupa te he usko bolte he
+# abstraction iska use karke class ko abstract kar sakte he matlab ki agar abstraction decorator laga diya kisi method pe
+# to jab bhi vo class inherit karenge kisi dusri class me to dusri class me bhi vo method dena padega
+# iskeliye phele abc library se ABD class ko import karna padta he fir usme abstractmethod naam ka function bana hota he
+# jo ki @abstractmethod is decorator se call hojata he
+from abc import ABC,abstractmethod
 
 # inheritance
 # inheritance ye pura javascript ki tarah hota he iska use karke dusri class ke methods ko bhi use kar sakte he
 
+# __name ye lagane se method ya proper hide ho jati bas class ka name use karke hi dekh sakte he isntance me nahi dekh sakte
+# agar aap chate ho ki jo hide kiya he vo access kar sake to class me method galana hoga aur usme vo return karna hoga
+# aur jab instance me access karna ho to bhi usi method se hi karna hoga
 
-
+# polymorphism
+# polymorphism matlab ek cheez lekin kaam bohot saare for exp same methods but different work
 
 
 class employee:

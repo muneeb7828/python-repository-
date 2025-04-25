@@ -248,13 +248,14 @@ list1=sorted(fruits2,key=lambda v:len(v))
 print(list1)
 
 
+# join() ye list string bana deta he
 
+fruits3=["apple","orange","banana","lichi","mango"]
 
+print(fruits3)
 
-
-
-
-
+fruits3="+".join(fruits3)
+print(fruits3)
 
 
 

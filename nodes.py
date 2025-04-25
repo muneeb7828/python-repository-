@@ -60,11 +60,12 @@ print(contents)
 # is tarike se file ke element ko import kar sakte he
 
 
+# dir(class name)
+# isse class ke saare methods dikh jate he
 
 
-
-
-
+import time  # isse code ko stop kar sakte he
+time.sleep(1)
 
 
 

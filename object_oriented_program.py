@@ -7,8 +7,6 @@
 # iska use karke ek class se baar baar instance bana sakte he
 # aur ye ek form ki tarah hota he jese kisi ne form fill kiya to uske naam ka form hojayga aur nahi kiya to kuch nahi hoga
 # aur isme abstraction aur incapsulation bhi hota javascript ki tarah
-# abstraction se methods hide kar sakte he
-# incapsulation se sab ajata he
 
 
 

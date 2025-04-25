@@ -1,6 +1,9 @@
 
 
 # operator overloading in python
+# python overloading ko support nahi karta matlab same functions but different parameter aur fir jab call karenge to ye nahi chalega
+
+
 # ye methods tab use karte he jab object me ye plus minus karna ho 
 # 0perator in python can be overloaded using dunder methods for exp  
 # p1+p2 = p1._add_(p2) 
@@ -21,8 +24,8 @@ class employee:
     a=10
     def __init__(self):
         print("this is a constructor of employee")
-
-    def run(self):
+    @staticmethod           # is method se instance dena nahi padta
+    def run():
         print("run fast")      
 
 
@@ -35,7 +38,7 @@ class programmer(coder):
     def __init__(self):         
       print("this is contructor of programmer")  
 
-    @property      # iska use karke property ko set kar sakte he lekin iske liye ek setter decorator bhi banana padta he jo isko set karta he
+    @property      # iska use karke property ko set kar sakte he lekin iske liye ek setter decorator bhi banana padta he jo isko set karta he nahi to nahi set kar sakte he
     def name(self):
         return self.fname , self.lname
     
@@ -102,4 +105,74 @@ print(ab-cc)
 print(ab*cc)
 print(ab/bb)
 print(len(ab))
+
+
+ 
+# getter and setter 
+
+class student:
+
+
+     def __init__(self):
+        self.__name="muneeb"
+
+
+     def get_name(self):
+        return self.__name   
+
+     def set_name(self,nam):
+        self.__name=nam
+        return self.__name
+
+s1=student()
+print(s1.get_name())
+print(s1.set_name("muneeb ur rehman"))
+print(s1.get_name())
+
+
+
+
+# mini project
+
+class MobilePhone:
+    def __init__(self):
+        self.brand="Samsung"     # public
+        self._apps=["Whatsapp","Instagram"]  # protected
+        self.__password="1234"   # private
+
+
+    def unlock_phone(self,entered_password):
+        if entered_password == self.__password:
+            print("phone unlock")
+
+        else:
+            print("wrong password")
+
+    def show_apps(self):
+        print(f"Installed Apps: {self._apps}")
+
+
+
+phone=MobilePhone()
+
+print(phone.brand)
+
+
+print(phone._apps)
+
+
+# print(phone.__password) this will give error 
+
+print(phone._MobilePhone__password)    # is tarike se bhi private property ko dekh sakte he
+
+
+phone.unlock_phone("1234")
+
+
+
+
+
+
+
+
 
