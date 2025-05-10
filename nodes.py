@@ -16,10 +16,10 @@ jokes=pyjokes.get_joke()
 
 
 
-# import pyttsx3
-# engine = pyttsx3.init()
-# engine.say("I will speak this text")
-# engine.runAndWait()
+import pyttsx3
+engine = pyttsx3.init()
+engine.say("I will speak this text")
+engine.runAndWait()
 
 
 # isse c folder ki files ko dekh sakte he

@@ -1,6 +1,6 @@
 
 # default parameter 
-# default parameter iska use tab karte he jab agar agrument nahi di to ye use karega
+# default parameter iska use tab karte he jab agar argument nahi di to ye use karega aur default argument nahi de sakte
 
 def func(fname,lname="Rehman"):
     print(fname,lname)
@@ -27,7 +27,7 @@ func("muneeb","ur rehman")
 import time
 
 def timer(fun):
-    def wrapper(*args):         # ye function call chalta he isse example_function(2)
+    def wrapper(*args):         # ye function call hota he isse example_function(2)
         start=time.time()
         result=fun(*args)
         end=time.time()
@@ -45,7 +45,7 @@ def example_function(*args,**kwargs):    # ye function decorator ke parameter me
 
 
 
-# example_function(2)
+example_function(2,3,4,5)
 
 
 
@@ -74,7 +74,6 @@ greet("muneeb","hellow")
 
 
 hello()
-
 
 
 
@@ -122,5 +121,12 @@ hello()
 # print(long_running_funtion(2,2))
 
 
+
+
+
+def fun(**kwargs):      # ye zero argument leta he jab tab isko sahi format me argument nahi milta ya to name="muneeb" is format me ho ya **{"name":"muneeb"} is format me
+    print(kwargs)       # aur ye json format convert kardeta he
+    
+fun(**{"id": 12,"title": "hellowsdsd","description": "hellow sdsdworld"})
 
 
