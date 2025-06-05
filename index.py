@@ -214,7 +214,7 @@ print(sett3)
 # sett3.intersection() # ye jo similar he usko return karta he
 # sett3.issubset()  # subset vo hota he jese ham kisi set ko compare kar rahe he agar set me he to vo subset hoga
 # sett3.issuperset() # superset vo hota he agar kisi set ka subset he to vo uska superset hoga
-# sett3.difference() # ye 2 sets ko compare karta he aur ye vo value return karta he jo value different hoti
+# sett3.difference() # ye 2 sets ko compare karta he aur ye vo value return karta he jo value different hoti he
 
 print(sett3.union(sett))
 print(sett3.intersection(sett))

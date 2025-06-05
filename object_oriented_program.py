@@ -3,7 +3,7 @@
 
 
 # Class in Object Oriented Programming
-#  ye javascript me class constructor ki tarah hota he
+# ye javascript me class constructor ki tarah hota he
 # iska use karke ek class se baar baar instance bana sakte he
 # aur ye ek form ki tarah hota he jese kisi ne form fill kiya to uske naam ka form hojayga aur nahi kiya to kuch nahi hoga
 # aur isme abstraction aur incapsulation bhi hota javascript ki tarah

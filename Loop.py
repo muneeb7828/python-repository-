@@ -29,7 +29,7 @@ for i in dic:
 
 
 # while loop in python
-# isse me variable ko define kana padta he phele
+# isme variable ko define kana padta he phele
 
 
 k=0

@@ -5,7 +5,7 @@
 
 
 # ye methods tab use karte he jab object me ye plus minus karna ho 
-# 0perator in python can be overloaded using dunder methods for exp  
+# operator in python can be overloaded using dunder methods for exp  
 # p1+p2 = p1._add_(p2) 
 # p1-p2 = p1._sub_(p2) 
 # p1*p2 = p1._mul_(p2) 
